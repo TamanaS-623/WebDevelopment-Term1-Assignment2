@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <head>
+  <title> flex box layout </title>
+<style>
+body
+{
+  box-sizing : border-box;
+  background-color : rgb(88 ,88 ,88);
+  color : black;
+  text-align : center;
+  padding : 10px;
+  margin : 0px;
+}
+
+.box
+{
+  display : flex;
+  font-size : 20px;
+  text-align: center;
+  flex-flow : row wrap;
+  padding : 20px;
+  flex: 2 100%;
+}
+
+header
+{
+  background-color : #ffcfcf;
+  padding : 20px;
+  flex: 2 100%;
+}
+
+.main
+{
+  background-color : #ff42aa;
+  text-align : left;
+  padding : 20px;
+  flex: 2 100%;
+}
+
+.one
+{
+  background-color : #ff6666;
+  padding : 20px;
+  flex: 2 100%;
+}
+
+.two
+{
+  background-color : #bbaa77;
+  padding : 20px;
+  flex: 2 100%;
+}
+
+footer
+{
+  background-color : #ffddfd;
+  padding : 20px;
+  flex: 2 100%;
+}
+
+@media screen and (min-width: 990px)
+{
+  .side { flex: 1; }
+}
+
+@media screen and (min-width: 990px)
+{
+  .main
+  { flex : 4 0px; }
+
+  header
+  { order : 0; }
+
+  .main
+  { order : 2; }
+
+  .one
+  { order : 1; }
+
+  .two
+  { order : 3; }
+
+  footer
+  { order : 4; }
+}
+</style>
+
+</head>
+
+<body>
+<div class="box">
+  <header>
+  ---  Flex_Box ---
+  </header>
+
+  <div class="main">
+    <p>The Flexible Box Module, usually referred to as flexbox, was designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface and powerful alignment capabilities. This article gives an outline of the main features of flexbox, which we will be exploring in more detail in the rest of these guides.    </p>
+    <p> When we describe flexbox as being one dimensional we are describing the fact that flexbox deals with layout in one dimension at a time — either as a row or as a column. This can be contrasted with the two-dimensional model of CSS Grid Layout, which controls columns and rows together.</p>
+  </div>
+
+  <div class="side one">
+    Aside-01
+  </div>
+
+  <div class="side two">
+    Aside-02
+  </div>
+
+  <footer>
+    Thank you!!!
+  </footer>
+</div>
+</body>
+</html>

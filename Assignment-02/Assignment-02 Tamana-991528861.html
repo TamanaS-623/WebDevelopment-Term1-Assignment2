@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+</html>
+  <title> flex box layout </title>
+<style>
+    body
+    {
+      box-sizing : border-box;
+      background-color : rgb(88 ,88 ,88);
+      color : black;
+      text-align : center;
+    }
+
+    .box
+    {
+      display : flex;
+      font-size : 20px;
+      text-align: center;
+      flex-flow : row wrap;
+      padding : 20px;
+    }
+
+    header
+    {
+      background-color : #ffcfcf;
+      padding : 20px;
+      flex: 1 100%;
+    }
+
+    .main
+    {
+      background-color : #ff42aa;
+      text-align : left;
+      padding : 20px;
+      flex: 8 ;
+      order :1 ;
+    }
+
+    .one
+    {
+      background-color : #ff6666;
+      padding : 20px;
+      flex: 2;
+      order : 0;
+    }
+
+    .two
+    {
+      background-color : #bbaa77;
+      padding : 20px;
+      flex: 2;
+      order : 2;
+    }
+
+    footer
+    {
+      background-color : #ffddfd;
+      padding : 20px;
+      flex: 1 100%;
+      order : 4;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <header>
+    ---  Flex_Box ---
+    </header>
+
+    <div class="main">
+      <p>The Flexible Box Module, usually referred to as flexbox, was designed as a one-dimensional layout model, and as a method that could offer space distribution between items in an interface and powerful alignment capabilities. This article gives an outline of the main features of flexbox, which we will be exploring in more detail in the rest of these guides.    </p>
+      <p> When we describe flexbox as being one dimensional we are describing the fact that flexbox deals with layout in one dimension at a time — either as a row or as a column. This can be contrasted with the two-dimensional model of CSS Grid Layout, which controls columns and rows together.</p>
+    </div>
+
+    <div class="one">
+      Aside-01
+    </div>
+
+    <div class="two">
+      Aside-02
+    </div>
+
+    <footer>
+      Thank you!!!
+    </footer>
+  </div>
+</body>
+</html>
